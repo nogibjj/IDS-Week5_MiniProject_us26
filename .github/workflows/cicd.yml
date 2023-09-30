@@ -1,4 +1,4 @@
-name: Python Polar CI
+name: SQL CI/CD
 
 on:
   push:
