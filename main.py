@@ -2,9 +2,9 @@
 ETL-Query script
 """
 
-from mylib.extract import extract
+from mylib.create import extract
 from mylib.transform_load import load
-from mylib.query import query
+from mylib.read import query
 
 # Extract
 print("Extracting data...")
