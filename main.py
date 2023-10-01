@@ -3,7 +3,7 @@ ETL-Query script
 """
 
 from mylib.create import extract
-from mylib.transform_load import load
+from mylib.update import load
 from mylib.read import query
 
 # Extract
