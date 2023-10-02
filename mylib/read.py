@@ -3,39 +3,36 @@ Reading data from a database
 """
 
 import sqlite3
-from pprint import pprint
 
 
 def read(database_name):
     cnt = sqlite3.connect(database_name)
 
-    print("Name of university in USA :")
+    #"Name of university in USA :"
 
     cursor = cnt.execute(
         """SELECT "Name of University" FROM universities WHERE
                         "Location" == "United States";"""
     )
 
-    result = cursor.fetchall()
-    pprint(result)
+    result1 = cursor.fetchall()
     print("")  # Print new line
 
-    print("Name of University where No of student per staff is less than 40.0")
+    #"Name of University where No of student per staff is less than 40.0"
 
     cursor = cnt.execute(
         """SELECT "Name of University", "No of student per staff" FROM
-    universities WHERE "No of student per staff"<40.0;"""
+    universities WHERE "No of student per staff" > 40.0;"""
     )
-    result = cursor.fetchall()
-    pprint(result)
-
+    result2 = cursor.fetchall()
+    
     print("")
 
     cursor = cnt.execute(
         """SELECT "Name of University", "No of student per staff" FROM
-universities WHERE ("No of student per staff" < 40.0) OR ("Location" == "Canada");"""
+universities WHERE ("No of student per staff" < 40.0) AND ("Location" == "Canada");"""
     )
-    result = cursor.fetchall()
-    pprint(result)
+    result3 = cursor.fetchall()
+    cnt.commit()
 
-    return
+    return result1,result2,result3

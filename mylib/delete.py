@@ -2,7 +2,6 @@
 deletion of data present in the table.
 """
 import sqlite3
-from pprint import pprint
 from datetime import datetime
 
 
@@ -14,7 +13,7 @@ def delete(Database_Name):
     con.commit()
 
     results = cursor.fetchall()
-    return pprint(results)
+    return results
 
 
 def report():

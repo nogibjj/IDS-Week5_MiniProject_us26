@@ -13,10 +13,9 @@ def create(Database_Name):
 
     df.to_sql("universities", con, if_exists="append", index=False)
 
-    cursor = con.execute("SELECT * FROM universities")
-    result = cursor.fetchall()
+    #cursor = con.execute("SELECT * FROM universities")
+    #result = cursor.fetchall()
     con.commit()
     con.close()
-    print("Database with table named universities created")
-    print("")
-    return pprint(result)
+
+    return ("Database with table named universities created")
