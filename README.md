@@ -69,3 +69,20 @@ Here is an overview of CRUD operations:
 <p align="center">
   <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/lint.png" alt="lint">
 </p>	
+
+6.Created GitHub Actions that performs all four Makefile commands with badges for each one in the README.md
+
+##### Action include the general CI/CD process in test.yml file, which automatically generate the graph and markdown
+
+<p align="center">
+  <img width="600" src="https://github.com/nogibjj/IDS706-Individual_Project_1_us26/blob/main/Image/yml_actions.png" alt="yml_actions">
+</p>	
+
+## Visualization 
+#### Visualization Created using sql database using pandas.read_sql_query (https://pandas.pydata.org/docs/reference/api/pandas.read_sql_query.html)
+
+##### Count of top universities vs mean industry income score 
+
+<p align="center">
+  <img width="600" src="https://github.com/nogibjj/IDS706-Individual_Project_1_us26/blob/main/output_graph/visualization.png" alt="visualization">
+</p>	
