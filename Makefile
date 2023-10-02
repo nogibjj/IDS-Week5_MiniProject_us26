@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 test:
-	python -m pytest -vv *.py
+	python -m pytest -vv --cov=main *.py
 
 format:	
 	black mylib/*.py 
@@ -11,5 +11,6 @@ format:
 
 lint:
 	ruff mylib/*.py
+	ruff *.py
 		
 all: install test format lint

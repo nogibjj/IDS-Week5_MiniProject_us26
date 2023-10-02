@@ -8,11 +8,14 @@ con = sqlite3.connect("ranking.db")
 
 def visualization(con):
     result1 = pd.read_sql_query(
-        "SELECT Location, COUNT(`University Rank`) AS RankCount FROM universities GROUP BY Location",
+        "SELECT Location, COUNT(`University Rank`) "
+        + " AS RankCount FROM universities "
+        + "GROUP BY Location",
         con=con,
     )
     result2 = pd.read_sql_query(
-        "SELECT Location, AVG(`Industry Income Score`) AS Score FROM universities GROUP BY Location",
+        "SELECT Location, AVG(`Industry Income Score`)"
+        + "AS Score FROM universities GROUP BY Location",
         con=con,
     )
 
