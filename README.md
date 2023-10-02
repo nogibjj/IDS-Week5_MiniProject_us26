@@ -51,19 +51,12 @@ Here is an overview of CRUD operations:
 
       - install: using requirements.txt file to install required packages
 
-<p align="center">
-  <img width="600" src="https://github.com/nogibjj/IDS706-Individual_Project_1_us26/blob/main/Image/install.png" alt="install">
-</p>
-
       - test:
-
 
 python -m pytest -vv --cov=main *.py
 <p align="center">
   <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/test.png" alt="install">
 </p>
-
-
 
       - format: using black formatter
 
@@ -71,7 +64,6 @@ python -m pytest -vv --cov=main *.py
   <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/format.png" alt="format">
 </p>
 
-      
       - lint: using ruff 
 
 <p align="center">
