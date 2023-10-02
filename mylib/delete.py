@@ -17,10 +17,9 @@ def delete(Database_Name):
 
 
 def report():
-    result = {
-        'Successfully completed CRUD operation'
-    }
+    result = {"Successfully completed CRUD operation"}
     return result
+
 
 def create_summary(file_path):
     now = datetime.now()

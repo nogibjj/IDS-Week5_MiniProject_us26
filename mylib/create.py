@@ -12,9 +12,9 @@ def create(Database_Name):
 
     df.to_sql("universities", con, if_exists="replace", index=False)
 
-    #cursor = con.execute("SELECT * FROM universities")
-    #result = cursor.fetchall()
+    # cursor = con.execute("SELECT * FROM universities")
+    # result = cursor.fetchall()
     con.commit()
     con.close()
 
-    return ("Database with table named universities created")
+    return "Database with table named universities created"
