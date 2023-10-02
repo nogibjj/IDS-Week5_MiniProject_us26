@@ -1,24 +1,21 @@
-import polars as pl
+import pandas as pd
 import plotly.express as px
+import sqlite3
 import os
+con = sqlite3.connect('ranking.db')
 
-url = "https://github.com/nogibjj/IDS706-Individual_Project_1_us26/blob/main/Ranking.csv?raw=true"
+def visualization(con):
+    result1 = pd.read_sql_query("SELECT Location, COUNT(`University Rank`) AS RankCount FROM universities GROUP BY Location", con=con)
+    result2 = pd.read_sql_query("SELECT Location, AVG(`Industry Income Score`) AS Score FROM universities GROUP BY Location", con=con)
 
-dataset = pl.read_csv(url)
-
-
-def visualization(data):
-    result1 = data.group_by("Location").agg(pl.col("University Rank").count())
-    result2 = data.group_by("Location").agg(pl.col("Industry Income Score").mean())
-
-    joined = result1.join(result2, left_on="Location", right_on="Location")
+    joined = result1.merge(result2, how='inner', on='Location')
 
     fig = px.scatter(
         joined,
-        x=joined["Industry Income Score"],
-        y=joined["University Rank"],
+        x=joined["Score"],
+        y=joined["RankCount"],
         color=joined["Location"],
-        size=joined["University Rank"],
+        size=joined["RankCount"],
     )
 
     fig.update_layout(
@@ -33,6 +30,5 @@ def visualization(data):
 
     fig.write_image("output_graph/visualization.png")
 
-
 if __name__ == "__main__":
-    visualization(dataset)
+    visualization(con)
