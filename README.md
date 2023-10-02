@@ -49,16 +49,16 @@ Here is an overview of CRUD operations:
 4. Delete
 5. Makefile with the following:
 
-      - install: using requirements.txt file to install required packages
+	- install: using requirements.txt file to install required packages
 
-      - test:
+	- test:
 
-python -m pytest -vv --cov=main *.py
+	python -m pytest -vv --cov=main *.py
 <p align="center">
   <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/test.png" alt="install">
 </p>
 
-      - format: using black formatter
+	- format: using black formatter
 
 <p align="center">
   <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/format.png" alt="format">
