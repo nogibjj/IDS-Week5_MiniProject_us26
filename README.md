@@ -11,7 +11,9 @@
 #### Overview
 
 This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab). I have used world university ranking csv file and loaded it into 'ranking.db' database under the table name 'universities'.
+
 Here is an overview of CRUD operations:
+		
 	CRUD stands for Create, Read, Update, and Delete, which are the four basic operations for managing data in a database or data storage system. These operations are essential for interacting with and manipulating data within an application or database. Here's a brief overview of each CRUD operation:
 
 1. **Create (C)**:
