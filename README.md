@@ -75,8 +75,8 @@ Here is an overview of CRUD operations:
 ##### Action include the general CI/CD process in test.yml file, which automatically generate the graph and markdown
 
 <p align="center">
-  <img width="600" src="https://github.com/nogibjj/IDS706-Individual_Project_1_us26/blob/main/Image/yml_actions.png" alt="yml_actions">
-</p>	
+  <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/ci_cd.png" alt="cicd">
+</p>
 
 ## Visualization 
 #### Visualization Created using sql database using pandas.read_sql_query (https://pandas.pydata.org/docs/reference/api/pandas.read_sql_query.html)
