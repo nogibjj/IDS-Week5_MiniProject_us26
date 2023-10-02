@@ -14,13 +14,13 @@ def test_create():
 
 def test_read():
     result = read("ranking.db")
-    assert len(result[0]) == 54
-    assert len(result[1]) == 34
-    assert len(result[2]) == 4
+    assert len(result[0]) == 34
+    assert len(result[1]) == 6
+    assert len(result[2]) == 2
 
 def test_update():
     result = update("ranking.db")
-    assert result[2][2] == 'not found'
+    assert result[15][2] == 'not found'
 
 
 def test_delete():
