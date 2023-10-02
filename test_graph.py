@@ -2,13 +2,21 @@ import pandas as pd
 import plotly.express as px
 import sqlite3
 import os
-con = sqlite3.connect('ranking.db')
+
+con = sqlite3.connect("ranking.db")
+
 
 def visualization(con):
-    result1 = pd.read_sql_query("SELECT Location, COUNT(`University Rank`) AS RankCount FROM universities GROUP BY Location", con=con)
-    result2 = pd.read_sql_query("SELECT Location, AVG(`Industry Income Score`) AS Score FROM universities GROUP BY Location", con=con)
+    result1 = pd.read_sql_query(
+        "SELECT Location, COUNT(`University Rank`) AS RankCount FROM universities GROUP BY Location",
+        con=con,
+    )
+    result2 = pd.read_sql_query(
+        "SELECT Location, AVG(`Industry Income Score`) AS Score FROM universities GROUP BY Location",
+        con=con,
+    )
 
-    joined = result1.merge(result2, how='inner', on='Location')
+    joined = result1.merge(result2, how="inner", on="Location")
 
     fig = px.scatter(
         joined,
@@ -29,6 +37,7 @@ def visualization(con):
         os.mkdir("output_graph")
 
     fig.write_image("output_graph/visualization.png")
+
 
 if __name__ == "__main__":
     visualization(con)
