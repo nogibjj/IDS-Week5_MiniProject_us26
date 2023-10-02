@@ -18,3 +18,5 @@ plotly
 pandas
 kaleido
 pyarrow
+ruff
+polars
