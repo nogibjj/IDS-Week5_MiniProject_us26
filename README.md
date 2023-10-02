@@ -8,7 +8,7 @@
 </p>
 
 
-#### Overview
+### Overview
 
 This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab). I have used world university ranking csv file and loaded it into 'ranking.db' database under the table name 'universities'.
 
@@ -41,7 +41,7 @@ Here is an overview of CRUD operations:
    - In NoSQL databases, you use methods like `deleteOne` or `deleteMany` to delete documents from a collection.
 
 
-#### Code Description
+### Code Description
 
 1. Read
 2. Create
