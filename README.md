@@ -14,7 +14,7 @@ This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab
 
 Here is an overview of CRUD operations:
 		
-	CRUD stands for Create, Read, Update, and Delete, which are the four basic operations for managing data in a database or data storage system. These operations are essential for interacting with and manipulating data within an application or database. Here's a brief overview of each CRUD operation:
+    CRUD stands for Create, Read, Update, and Delete, which are the four basic operations for managing data in a database or data storage system. These operations are essential for interacting with and manipulating data within an application or database. Here's a brief overview of each CRUD operation:
 
 1. **Create (C)**:
    - Create is the operation used to add new data or records to a database.
