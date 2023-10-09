@@ -2,19 +2,18 @@
 
 [![SQL CI/CD](https://github.com/nogibjj/IDS-Week5_MiniProject_us26/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/IDS-Week5_MiniProject_us26/actions/workflows/cicd.yml)
 
-
 <p align="center">
-  <img width="600" src="https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d" alt="sql">
+  <img width="600" src="https://github.com/nogibjj/IDS-Week5_MiniProject_us26/blob/main/images/schema.png" alt="schema">
 </p>
 
 
 ### Overview
 
-This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab). I have used world university ranking csv file and loaded it into 'ranking.db' database under the table name 'universities'.
+This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab). I have used world university ranking csv file and loaded it into 'ranking.db' database under the table name 'universities'. Using ** CRUD ** operation to interacts with a SQL database.
 
 Here is an overview of CRUD operations:
 		
-    CRUD stands for Create, Read, Update, and Delete, which are the four basic operations for managing data in a database or data storage system. These operations are essential for interacting with and manipulating data within an application or database. Here's a brief overview of each CRUD operation:
+  CRUD stands for Create, Read, Update, and Delete, which are the four basic operations for managing data in a database or data storage system. These operations are essential for interacting with and manipulating data within an application or database. Here's a brief overview of each CRUD operation:
 
 1. **Create (C)**:
    - Create is the operation used to add new data or records to a database.
