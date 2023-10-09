@@ -9,7 +9,7 @@
 
 ### Overview
 
-This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab). I have used world university ranking csv file and loaded it into 'ranking.db' database under the table name 'universities'. Using ** CRUD ** operation to interacts with a SQL database.
+This repo has been created by forked from (https://github.com/nogibjj/sqlite-lab). I have used world university ranking csv file and loaded it into 'ranking.db' database under the table name 'universities'. Using **CRUD** operation to interacts with a SQL database.
 
 Here is an overview of CRUD operations:
 		
